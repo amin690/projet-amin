@@ -11,19 +11,19 @@
        
         <tr>
             <td>First Name *</td>
-            <td><input type="text"></td>
+            <td><input type="text" required minlength="3"></td>
         </tr>
         <tr>
             <td>Last Name </td>
-            <td><input type="text"></td>
+            <td><input type="text" minlength="3"></td>
         </tr>
         <tr>
             <td>Adress</td>
-            <td><textarea cols="25" rows="10"></textarea></td>
+            <td><textarea cols="25" rows="10" required></textarea></td>
         </tr>
         <tr>
             <td>Phone number *</td>
-            <td><input type="number"></td>
+            <td><input type="number" required></td>
         </tr>
 
 
@@ -39,12 +39,12 @@
         <tr>
         
             <td>Password*</td>
-            <td><input type="password"></td>
+            <td><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" required></td>
         </tr>
         <tr>
         
             <td>Confirm Password*</td>
-            <td><input type="confirm password"></td>
+            <td><input type="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" required ></td>
         </tr>
 
         <tr>
